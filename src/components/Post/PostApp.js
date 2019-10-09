@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import RenderPosts from "./components/RenderPosts";
+import RenderPosts from "./RenderPosts";
 
 export default class PostApp extends Component {
   state = {

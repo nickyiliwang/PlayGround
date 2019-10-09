@@ -13,11 +13,8 @@ export default class Giphy extends Component {
         `https://api.giphy.com/v1/gifs/search?api_key=nuBhOOiMJ9eBZIFtN6IQ3PC8FnyhufUH&q=${this.state.term}&limit=3&offset=0&rating=G&lang=en`
       )
       .then(res => {
-        // document.getElementById('image').src = res.data.data[0].embed_url
         console.log(res);
-        this.setState({ gif: res.data.data[0].embed_url });
-        // this.setState({ gif: res.data.data[0].bitly_url });
-        // console.log(res.data.data[0].embed_url);
+        this.setState({ gif: res.data.data[0].images.original.url });
       });
   };
 

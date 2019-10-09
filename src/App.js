@@ -1,15 +1,11 @@
 import React, { Component } from "react";
-import Giphy from "./components/Giphy";
-import Gfycat from "./components/Gfycat";
-// import PostApp from './components/PostApp'
-// import ReCAPTCHA from "react-google-recaptcha";
+import PostInfinite from "./components/Post/PostInfinite";
 
 class App extends Component {
   render() {
     return (
       <div>
-        {/* <Giphy /> */}
-        <Gfycat />
+        <PostInfinite />
       </div>
     );
   }
